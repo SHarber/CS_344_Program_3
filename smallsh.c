@@ -3,12 +3,12 @@
  * Last Update:		8/6/17
  * Description: 	Create a shell in C that will run command line instructions.
  * Specifications:	- Shell will support 3 built in commands: exit, cd, status.
- * 					- Comments will begin with '#'.
- * 					- If it is a background process & will be the last character of the command.
- * 					- A colon is the symbol as a prompt for the command line.
- * 					- Shell will allow for redirection of standard input & standard output
- * 					- Shell will support both foreground and background processes.
- * 					-
+ * 			- Comments will begin with '#'.
+ * 			- If it is a background process & will be the last character of the command.
+ * 			- A colon is the symbol as a prompt for the command line.
+ * 			- Shell will allow for redirection of standard input & standard output
+ * 			- Shell will support both foreground and background processes.
+ * 			
  ******************************************************************************************************/
 
 // Set Header Files
@@ -40,7 +40,7 @@ void getInput(); // Display command line & get input.
 void builtInCommands(); // Check to see if command is built in & execut if it is.
 
 /****************************************************************
- *			  			 MAIN FUNCTION
+ *			  MAIN FUNCTION
  ***************************************************************/
  int main()
  {
@@ -52,17 +52,17 @@ void builtInCommands(); // Check to see if command is built in & execut if it is
  }
 
  /******************************************************************************************************
- *						 					Define Functions Declared Above
+ *				Define Functions Declared Above
  ******************************************************************************************************/
 
 
 /****************************************************************
  * Function Name: 	getInput
  * Description: 	Function to display the command line and
- *					get user input.
+ *			get user input.
  * Specifications:	If user inputs a comment (line that begins
- * 					with '#' or a blank line, the command line
- * 					will reprompt the user for a new command.
+ * 			with '#' or a blank line, the command line
+ * 			will reprompt the user for a new command.
  **************************************************************/
 void getInput()
 {
@@ -117,12 +117,12 @@ void getInput()
  * Function Name: 	builtInCommands
  * Description: 	Function to handle 3 built in commands. 
  * Specifications:	Fuction will handle exit, status and cd.  
- * 					Exit will exit the shell. cd will change
- * 					directories.  Without arguments, it will
- * 					change to the HOME environment.  Status
- * 					will print out either the exit status or
- * 					the terminating signal of the last 
- * 					foreground process.
+ * 			Exit will exit the shell. cd will change
+ * 			directories.  Without arguments, it will
+ * 			change to the HOME environment.  Status
+ * 			will print out either the exit status or
+ * 			the terminating signal of the last 
+ * 			foreground process.
  **************************************************************/
 void builtInCommands()
 {
